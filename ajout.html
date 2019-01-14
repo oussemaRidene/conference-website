@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Conférences</title>
+  <style>
+    body {
+      background: #136a8a;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #267871, #136a8a);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #267871, #136a8a);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    body {
+      font-family: "Lato", sans-serif;
+    }
+  </style>
+
+  <!-- Google Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Raleway:500italic,600italic,600,700,700italic,300italic,300,400,400italic,800,900' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,300italic,400italic,600italic,700,900' rel='stylesheet' type='text/css'>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <!--<link rel="stylesheet" type="text/css" href="css/mdb.css">-->
+
+  <!-- Fontawesome  -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+
+  <!-- Animate CSS -->
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <!-- BX slider CSS -->
+  <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
+
+  <!-- responsive css -->
+  <link rel="stylesheet" type="text/css" href="css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+</head>
+
+<body>
+
+  <!--  <div class="sidenav">
+      <a href="#">Acceuil</a>
+      <a href="#">Consulter</a>
+      <a href="#">Gerer</a>
+    </div>-->
+  <ul id="slide-out" class="side-nav">
+    <li><a class="waves-effect" href="acceuil.html">Acceuil</a></li>
+    <li>
+      <ul class="collapsible collapsible-accordion">
+        <li>
+          <a class="waves-effect collapsible-header" href="admin_consulter.html">Consulter</a>
+          <div class="collapsible-body">
+            <ul>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <ul class="collapsible collapsible-accordion">
+        <li>
+          <a class="collapsible-header waves-effect">Gerer</a>
+          <div class="collapsible-body">
+            <ul>
+              <li><a href="ajout.html">Ajouter</a></li>
+              <li><a href="#!">Modifier</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <a href="#" data-activates="slide-out" class="btn-floating  waves-effect waves-light button-collapse"><i class="material-icons">menu</i></a>
+
+
+
+  <!--Jumbotron-->
+  <div class="container">
+    <div class="jumbotron">
+
+      <h1 class="display-4" align=center>Ajouter un nouveau conferencier</h1>
+      <br>
+      <div class="container">
+
+        <form>
+          <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Nom</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Prenom  </label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Metier</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Etablissement </label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-2 col-form-label">CV </label>
+            <div class="col-sm-8">
+              <textarea class="form-control" rows="5"></textarea>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Sujet de conférence </label>
+
+            <div class="col-sm-8">
+              <input type="text" class="form-control">
+            </div>
+          </div>
+
+          <div class="file-field input-field  row">
+            <div class="btn col-sm-2">
+              <span>Photo</span>
+              <input type="file" multiple>
+            </div>
+            <div class="file-path-wrapper col-sm-8">
+              <input class="file-path validate" type="text" placeholder="Selectionner une photo">
+            </div>
+          </div>
+          <!-- Form subscription -->
+          <p class="lead">
+            <div class="text-center">
+              <button class="btn btn-default">Valider!</button>
+            </div>
+          </p>
+        </form>
+      </div>
+      <!--Jumbotron-->
+    </div>
+  </div>
+
+  <script src="js\jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+  <!--<script src="js/mdb.js"></script>-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script type="text/javascript">
+    // Initialize collapse button
+    $(".button-collapse").sideNav({
+      menuWidth: 300, // Default is 300
+      closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+      draggable: true, // Choose whether you can drag to open on touch screens,
+    });
+    // Initialize collapsible (uncomment the line below if you use the dropdown variation)
+    //$('.collapsible').collapsible();
+  </script>
+
+</body>
+
+</html>

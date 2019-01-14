@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Conférences</title>
+  <style>
+    body {
+      background: #136a8a;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #267871, #136a8a);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #267871, #136a8a);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+  </style>
+
+  <!-- Google Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Raleway:500italic,600italic,600,700,700italic,300italic,300,400,400italic,800,900' rel='stylesheet' type='text/css'>
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,300italic,400italic,600italic,700,900' rel='stylesheet' type='text/css'>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/mdb.css">
+
+  <!-- Fontawesome  -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+
+  <!-- Animate CSS -->
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <!-- BX slider CSS -->
+  <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
+
+  <!-- responsive css -->
+  <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.css">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-toggleable-sm navbar-expand-lg navbar-dark">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <a class="navbar-brand" href="#">
+    Conférences
+  </a>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="acceuil.html">Accueil</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Programme<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="conferenciers.html">Conferenciers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="inscription.html">Inscription</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text">
+        <button class="btn btn-default btn-md my-2 my-sm-0" type="submit">Chercher</button>
+      </form>
+    </div>
+  </nav>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="text-center display-3">Notre programme</h1>
+      </div>
+    </div>
+    <br><br>
+
+    <table id="my-table" data-toggle="table" data-search="true" data-sort-name="Date" data-sort-order="asc" class="table  table-dark">
+      <thead>
+        <tr>
+          <th data-field="Date" data-sortable="true" scope="col">Date</th>
+          <th data-field="Acceuil" scope="col" data-sortable="true">Acceuil</th>
+          <th data-field="Sujet" scope="col" data-sortable="true">Sujet</th>
+          <th data-field="Conferencier" scope="col" data-sortable="true">Conferencier</th>
+          <th data-field="Email" scope="col" data-sortable="true">Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td scope="row">11/9</td>
+          <td>Adresse1</td>
+          <td>Developpement</td>
+          <td>Giacomo Guilizzoni</td>
+          <td>GiacomoGuilizzoni@mail.com</td>
+        </tr>
+        <tr>
+          <td scope="row">22/2</td>
+          <td>Adresse2</td>
+          <td>une sujet</td>
+          <td>Marco Botton</td>
+          <td>MarcoBotton@mail.com</td>
+        </tr>
+        <tr>
+          <td scope="row">13/01</td>
+          <td>Adresse2</td>
+          <td>une sujet</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem_ipsum.@mail.com</td>
+        </tr>
+        <tr>
+          <td scope="row">13/01</td>
+          <td>Adresse2</td>
+          <td>oune sujet</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem_ipsum.@mail.com</td>
+        </tr>
+        <tr>
+          <td scope="row">13/01</td>
+          <td>zAdresse2</td>
+          <td>cune sujet</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem_ipsum.@mail.com</td>
+        </tr>
+        <tr>
+          <td scope="row">13/01</td>
+          <td>mAdresse2</td>
+          <td>un sujet</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem_ipsum.@mail.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+
+
+</body>
+<script src="js\jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="js\bootstrap-table.js"></script>
+<!-- Latest compiled and minified Locales -->
+
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Conférences</title>
+  <style>
+    body {
+      background: #136a8a;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #267871, #136a8a);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #267871, #136a8a);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    body {
+      font-family: "Lato", sans-serif;
+    }
+
+    .sidenav {
+      height: 100%;
+      width: 200px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      padding-top: 20px;
+    }
+
+    .sidenav a {
+      padding: 6px 6px 6px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+    }
+
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+
+    .main {
+      margin-left: 200px;
+      /* Same as the width of the sidenav */
+    }
+
+    @media screen and (max-height: 450px) {
+      .sidenav {
+        padding-top: 15px;
+      }
+      .sidenav a {
+        font-size: 18px;
+      }
+    }
+  </style>
+
+  <!-- Google Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Raleway:500italic,600italic,600,700,700italic,300italic,300,400,400italic,800,900' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,300italic,400italic,600italic,700,900' rel='stylesheet' type='text/css'>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <!--<link rel="stylesheet" type="text/css" href="css/mdb.css">-->
+
+  <!-- Fontawesome  -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+
+  <!-- Animate CSS -->
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <!-- BX slider CSS -->
+  <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
+
+  <!-- responsive css -->
+  <link rel="stylesheet" type="text/css" href="css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+</head>
+
+<body>
+<!--  <div class="sidenav">
+    <a href="#">Acceuil</a>
+    <a href="#">Consulter</a>
+    <a href="#">Gerer</a>
+  </div>-->
+  <ul id="slide-out" class="side-nav">
+     <li><a class="waves-effect" href="acceuil.html">Acceuil</a></li>
+     <li>        <ul class="collapsible collapsible-accordion">
+               <li>
+                 <a class="waves-effect collapsible-header" >Consulter</a>
+                 <div class="collapsible-body">
+                   <ul>
+                   </ul>
+                 </div>
+               </li>
+             </ul>
+</li>
+     <li>
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header waves-effect">Gerer</a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="ajout.html">Ajouter</a></li>
+                <li><a href="#!">Modifier</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+   </ul>
+   <a href="#" data-activates="slide-out" class="btn-floating  waves-effect waves-light button-collapse"><i class="material-icons">menu</i></a>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="display-4" align=center>Les conferenciers enregistrés</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <table id="my-table" border=0 data-toggle="table" data-editable="Default empty text."  data-editable-url="/my/editable/update/path" data-advanced-search="true" data-search="true" data-sort-name="Date" data-sort-order="asc" class="table  table-dark">
+          <thead>
+            <tr>
+              <th data-field="Date" data-sortable="true" scope="col">Date</th>
+              <th data-field="Acceuil" scope="col" data-sortable="true">Acceuil</th>
+              <th data-field="Sujet" scope="col" data-sortable="true">Sujet</th>
+              <th data-field="Conferencier" scope="col" data-sortable="true">Conferencier</th>
+              <th data-field="Email" scope="col" data-sortable="true">Email</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row">11/9</td>
+              <td>Salle1</td>
+              <td>Developpement</td>
+              <td>Giacomo Guilizzoni</td>
+              <td>GiacomoGuilizzoni@mail.com</td>
+              <td><button type="button" class="btn waves-effect waves-light btn-small">Modifier</button> <img src="trash-can.png" alt="Supprimer" height='20' href="#"></td>
+            </tr>
+            <tr>
+              <td scope="row">22/2</td>
+              <td>Adresse 2</td>
+              <td>une sujet</td>
+              <td>Marco Botton</td>
+              <td>MarcoBotton@mail.com</td>
+              <td><button type="button" class="btn waves-effect waves-light btn-sm">Modifier</button> <img src="trash-can.png" alt="Supprimer" height='20' href="#"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+
+      <div class="fixed-action-btn horizontal click-to-toggle">
+        <a class="btn-floating btn-large">
+          <i class="material-icons">mode_edit</i>
+        </a>
+        <ul>
+          <li><a class="btn-floating" href="ajout.html"><i class="material-icons">add</i></a></li>
+        </ul>
+      </div>
+  </div>
+
+<script src="js\jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<!-- Latest compiled and minified Locales -->
+<script src="js\bootstrap-table.js"></script>
+<!--<script src="js/mdb.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script src="js\bootstrap-table-toolbar.js"></script>
+<script src="js\bootstrap-table-editable.js"></script>
+
+<script type="text/javascript">
+// Initialize collapse button
+$(".button-collapse").sideNav({
+  menuWidth: 300, // Default is 300
+      closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+      draggable: true, // Choose whether you can drag to open on touch screens,
+});
+// Initialize collapsible (uncomment the line below if you use the dropdown variation)
+//$('.collapsible').collapsible();
+</script>
+</body>
+</html>

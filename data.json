@@ -1,0 +1,23 @@
+var $table = $('#table');
+    var mydata =
+[
+    {
+        "Date": "11/9",
+        "Acceuil": "Salle1",
+        "Sujet": "Developpement",
+        "Conferencier": "Giacomo Guilizzoni",
+        "Email": "GiacomoGuilizzoni@mail.com",
+    },
+    {
+        "Date": "22/2",
+        "Acceuil": "Adresse2",
+        "Sujet": "une sujet",
+        "Conferencier": "Marco Botton",
+        "Email": "MarcoBotton@mail.com",
+    }
+]
+$(function () {
+    $('#table').bootstrapTable({
+        data: mydata
+    });
+});
